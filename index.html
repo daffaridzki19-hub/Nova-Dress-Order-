@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#09090c">
+<title>NOVA FASHION — Official Collection</title>
+<style>
+:root{--bg:#09090c;--panel:#141419;--panel2:#1b1b22;--line:#34343d;--silver:#e2e2e8;--muted:#a4a4af;--white:#f8f8fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -20%,#292932 0,transparent 48%),var(--bg);color:var(--white);font:15px/1.55 Arial,Helvetica,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#09090cf2;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{max-width:1120px;margin:auto;padding:17px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-family:Georgia,serif;font-size:25px;letter-spacing:3px;white-space:nowrap}.navlinks{display:flex;gap:12px;align-items:center}.navlinks a{color:#d8d8df;text-decoration:none;border:1px solid var(--line);border-radius:7px;padding:10px 16px;font-size:12px;letter-spacing:1px}.navlinks a:hover,.btn:hover{filter:brightness(1.13)}
+main{max-width:1120px;margin:auto;padding:25px 22px 70px}.hero{min-height:370px;border:1px solid var(--line);border-radius:15px;padding:55px 42px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(110deg,#24242cdd,#0b0b0fe8 70%),radial-gradient(circle at 80% 30%,#77778355,transparent 35%);margin:15px 0 55px}.eyebrow{font-size:11px;letter-spacing:5px;color:#b8b8c2}.hero h1{font:clamp(42px,8vw,82px)/.98 Georgia,serif;letter-spacing:2px;margin:20px 0 14px}.hero p{color:#b9b9c2;max-width:480px}.btn{border:1px solid #e1e1e8;background:#dedee5;color:#111116;border-radius:7px;padding:12px 18px;font-weight:700;letter-spacing:1px;cursor:pointer}.btn.dark{background:transparent;color:#eee;border-color:#555560}.btn.small{padding:8px 12px;font-size:11px}.section{margin:45px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:20px}.section h2{font:30px Georgia,serif;letter-spacing:1px;margin:7px 0}.sub{color:var(--muted);font-size:13px}.pill{border:1px solid var(--line);border-radius:30px;padding:7px 12px;font-size:10px;letter-spacing:2px;color:#c7c7d0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}.product{background:var(--panel);border:1px solid var(--line);border-radius:11px;overflow:hidden}.product img,.placeholder{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:linear-gradient(145deg,#2a2a33,#101015);}.placeholder{display:grid;place-items:center;color:#aaaab5;font:18px Georgia,serif;letter-spacing:3px}.product-info{padding:15px}.product h3{font:22px Georgia,serif;margin:0 0 5px}.product .meta{font-size:11px;letter-spacing:1.5px;color:#b7b7c1;margin:0 0 12px}.product .desc{font-size:13px;color:var(--muted);min-height:40px}.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:24px;margin-top:22px}.field{display:grid;gap:7px;margin:14px 0}label{font-size:11px;letter-spacing:2px;color:#c4c4cd}input,textarea,select{width:100%;background:#09090d;color:#f6f6f9;border:1px solid #484852;border-radius:7px;padding:13px;font:inherit}input:focus,textarea:focus,select:focus{outline:1px solid #aaaab5;border-color:#aaaab5}.claim-layout{display:grid;grid-template-columns:1fr 1fr;gap:24px}.message{padding:12px;border:1px solid var(--line);border-radius:7px;margin-top:12px;color:#ddd}.hidden{display:none!important}.admin-wrap{margin-top:60px}.admin-login{max-width:520px}.admin-panel{margin-top:20px}.admin-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.item-row,.claim-row{padding:12px;border:1px solid var(--line);border-radius:8px;margin:9px 0;display:flex;justify-content:space-between;gap:12px;align-items:center}.muted{color:var(--muted)}.footer{border-top:1px solid var(--line);padding:25px;text-align:center;color:#8f8f9a;font-size:11px;letter-spacing:2px}.empty{padding:22px;text-align:center;color:var(--muted);border:1px dashed var(--line);border-radius:8px}
+@media(max-width:650px){.nav{align-items:flex-start;flex-direction:column}.navlinks{width:100%}.navlinks a{flex:1;text-align:center;padding:9px 7px}.brand{font-size:22px}.hero{padding:38px 23px;min-height:320px}.claim-layout,.admin-grid{grid-template-columns:1fr}.panel{padding:18px}.section-head{align-items:flex-start;flex-direction:column}.item-row,.claim-row{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="nav"><div class="brand">NOVA FASHION</div><nav class="navlinks"><a href="#collection">COLLECTION</a><a href="#admin">ADMIN</a></nav></div></header>
+<main>
+<section class="hero"><div class="eyebrow">OFFICIAL MNRI FASHION PLATFORM</div><h1>DRESS.<br>SHINE.<br>INSPIRE.</h1><p>Discover the collection. Choose your look. Claim your exclusive fashion piece.</p><div><a href="#collection"><button class="btn">EXPLORE COLLECTION</button></a></div></section>
+<section id="collection" class="section"><div class="section-head"><div><div class="eyebrow">CURATED FOR YOU</div><h2>The Collection</h2><div class="sub">Explore the latest Nova Fashion designs.</div></div><span class="pill">LIMITED EDITION</span></div><div id="products" class="grid"></div></section>
+<section id="claim" class="panel section"><div class="eyebrow">EXCLUSIVE ACCESS</div><h2>Free Dress Claim</h2><p class="sub">Masukkan Roblox Username, kode klaim aktif, dan pilih dress. Tidak ada pembayaran.</p><div class="claim-layout"><div><div class="field"><label>ROBLOX USERNAME</label><input id="username" maxlength="30" placeholder="Masukkan username Roblox"></div><div class="field"><label>DAILY CLAIM CODE</label><input id="claimCode" placeholder="Masukkan kode dari admin"></div><div class="field"><label>SELECT YOUR DRESS</label><select id="selectedProduct"></select></div><button class="btn" id="claimBtn">CLAIM FOR RP0</button><div id="claimMessage" class="message hidden"></div></div><div><div class="eyebrow">IMPORTANT</div><p class="sub">Pastikan username Roblox benar sebelum mengirim klaim. Setiap username hanya dapat melakukan satu klaim per hari. Informasi item akan ditampilkan setelah admin mengisi Clothing Asset ID.</p><div id="promoStatus" class="message">Kode klaim belum diaktifkan.</div></div></div></section>
+<section id="admin" class="admin-wrap"><div class="eyebrow">MANAGEMENT STUDIO</div><h2>Admin Dashboard</h2><div id="adminLogin" class="panel admin-login"><h2>Admin Sign In</h2><p class="sub">Masukkan password admin untuk melanjutkan.</p><div class="field"><label>ADMIN PASSWORD</label><input id="adminPassword" type="password" placeholder="Enter password" autocomplete="current-password"></div><button class="btn" id="loginBtn">SIGN IN</button><div id="loginMessage" class="sub" style="margin-top:10px"></div></div>
+<div id="adminPanel" class="panel admin-panel hidden"><div style="display:flex;justify-content:space-between;align-items:center;gap:12px"><h2>Management Studio</h2><button class="btn dark small" id="logoutBtn">LOG OUT</button></div><div class="admin-grid"><div><h3>Add New Product</h3><div class="field"><label>PRODUCT NAME</label><input id="pName" placeholder="Dress name"></div><div class="field"><label>ROBLOX CLOTHING ASSET ID</label><input id="pId" placeholder="Asset ID"></div><div class="field"><label>DESCRIPTION</label><textarea id="pDesc" rows="3" placeholder="Short product description"></textarea></div><div class="field"><label>PRODUCT IMAGE</label><input id="pImage" type="file" accept="image/png,image/jpeg,image/webp"></div><button class="btn" id="addProduct">ADD PRODUCT</button><h3 style="margin-top:30px">Daily Claim Code</h3><div class="field"><label>ACTIVE CODE</label><input id="adminCode" placeholder="Set daily code"></div><button class="btn dark" id="saveCode">SAVE CLAIM CODE</button></div><div><h3>Manage Products</h3><div id="adminProducts"></div><h3 style="margin-top:30px">Claim History</h3><div id="claimHistory"></div></div></div><p class="sub" style="margin-top:24px">Catatan: versi ini menyimpan data di browser/perangkat yang mengelola website. Data produk dan klaim belum tersinkron otomatis ke semua pengunjung.</p></div></section>
+</main><footer class="footer">NOVA FASHION · LIMITED EDITION COLLECTION · FREE CLAIM · RP 0</footer>
+<script>
+const ADMIN_PASSWORD = 'MNRI26';
+const $ = id => document.getElementById(id);
+const read = (key, fallback) => { try { const v=localStorage.getItem('nova_'+key); return v===null?fallback:JSON.parse(v); } catch { return fallback; } };
+const write = (key, value) => localStorage.setItem('nova_'+key, JSON.stringify(value));
+let products = read('products', [
+ {id:'NV-001',name:'Silver Majesty',clothingId:'',desc:'An elegant exclusive Nova Fashion design.',image:'',available:true},
+ {id:'NV-002',name:'Midnight Elegance',clothingId:'',desc:'A timeless look for a special moment.',image:'',available:true}
+]);
+let claims = read('claims', []);
+let claimCode = read('code', '');
+function safe(value){return String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function render(){
+ const visible=products.filter(p=>p.available!==false);
+ $('products').innerHTML=products.map(p=>`<article class="product">${p.image?`<img src="${p.image}" alt="${safe(p.name)}">`:`<div class="placeholder">NOVA FASHION</div>`}<div class="product-info"><h3>${safe(p.name)}</h3><div class="meta">${safe(p.id)} · ${p.available===false?'SOLD OUT':'AVAILABLE'}</div><p class="desc">${safe(p.desc||'Exclusive Nova Fashion design.')}</p>${p.available===false?'<button class="btn dark" disabled>SOLD OUT</button>':`<button class="btn dark" onclick="selectProduct('${safe(p.id)}')">SELECT DRESS</button>`}</div></article>`).join('')||'<div class="empty">Belum ada koleksi.</div>';
+ $('selectedProduct').innerHTML=visible.map(p=>`<option value="${safe(p.id)}">${safe(p.name)}</option>`).join('');
+ $('promoStatus').textContent=claimCode?'Daily claim code is active.':'Kode klaim belum diaktifkan admin.';
+ renderAdmin();
+}
+function selectProduct(id){$('selectedProduct').value=id;$('claim').scrollIntoView({behavior:'smooth'});}
+window.selectProduct=selectProduct;
+$('claimBtn').onclick=()=>{
+ const username=$('username').value.trim().replace(/^@/,''),code=$('claimCode').value.trim().toUpperCase(),productId=$('selectedProduct').value,msg=$('claimMessage');
+ msg.classList.remove('hidden');
+ if(!username||!code||!productId){msg.textContent='Lengkapi semua kolom terlebih dahulu.';return;}
+ if(!claimCode||code!==claimCode.toUpperCase()){msg.textContent='Kode klaim tidak valid.';return;}
+ const day=new Date().toLocaleDateString('en-CA',{timeZone:'Asia/Makassar'});
+ if(claims.some(c=>c.username.toLowerCase()===username.toLowerCase()&&c.day===day)){msg.textContent='Username ini sudah melakukan klaim hari ini.';return;}
+ const p=products.find(x=>x.id===productId);if(!p||p.available===false){msg.textContent='Dress sudah tidak tersedia.';return;}
+ claims.push({id:Date.now(),username,product:p.name,productId:p.id,clothingId:p.clothingId||'',day,createdAt:new Date().toISOString()});write('claims',claims);
+ msg.textContent='Klaim berhasil dicatat. Clothing Asset ID: '+(p.clothingId||'Belum diisi admin')+'.';renderAdmin();
+};
+$('loginBtn').onclick=()=>{if($('adminPassword').value===ADMIN_PASSWORD){$('adminLogin').classList.add('hidden');$('adminPanel').classList.remove('hidden');$('loginMessage').textContent='';renderAdmin();}else{$('loginMessage').textContent='Password salah. Coba lagi.';$('adminPassword').value='';}};
+$('adminPassword').addEventListener('keydown',e=>{if(e.key==='Enter')$('loginBtn').click();});
+$('logoutBtn').onclick=()=>{$('adminPanel').classList.add('hidden');$('adminLogin').classList.remove('hidden');$('adminPassword').value='';};
+$('addProduct').onclick=()=>{
+ const name=$('pName').value.trim(),clothingId=$('pId').value.trim(),desc=$('pDesc').value.trim(),file=$('pImage').files[0];
+ if(!name){alert('Isi nama produk terlebih dahulu.');return;}
+ const saveProduct=image=>{products.push({id:'NV-'+String(Date.now()).slice(-7),name,clothingId,desc,image,available:true});write('products',products);$('pName').value='';$('pId').value='';$('pDesc').value='';$('pImage').value='';render();};
+ if(file){if(!['image/jpeg','image/png','image/webp'].includes(file.type)){alert('Format foto harus JPG, PNG, atau WEBP.');return;}if(file.size>1500000){alert('Ukuran foto maksimal 1.5 MB agar penyimpanan browser tidak cepat penuh.');return;}const reader=new FileReader();reader.onload=()=>saveProduct(reader.result);reader.onerror=()=>alert('Foto gagal dibaca.');reader.readAsDataURL(file);}else saveProduct('');
+};
+$('saveCode').onclick=()=>{claimCode=$('adminCode').value.trim().toUpperCase();write('code',claimCode);render();alert(claimCode?'Kode klaim berhasil disimpan.':'Kode klaim dikosongkan.');};
+function renderAdmin(){
+ $('adminCode').value=claimCode;
+ $('adminProducts').innerHTML=products.map((p,i)=>`<div class="item-row"><div><b>${safe(p.name)}</b><div class="sub">${safe(p.id)} · Asset: ${safe(p.clothingId||'Belum diisi')}</div></div><button class="btn dark small" onclick="deleteProduct(${i})">DELETE</button></div>`).join('')||'<div class="empty">Belum ada produk.</div>';
+ $('claimHistory').innerHTML=claims.slice().reverse().map(c=>`<div class="claim-row"><div><b>${safe(c.product)}</b><div class="sub">${safe(c.username)} · ${safe(c.day)}</div></div><span class="sub">${safe(c.clothingId||'No asset ID')}</span></div>`).join('')||'<div class="empty">Belum ada klaim.</div>';
+}
+window.deleteProduct=i=>{if(!confirm('Hapus produk ini?'))return;products.splice(i,1);write('products',products);render();};
+render();
+</script>
+</body></html>
